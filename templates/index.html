@@ -1,0 +1,50 @@
+<html>
+<body>
+
+<form  method="POST"  action="/predict"   enctype=multipart/form-data>
+	<br><br><br><br>
+
+	<Input Type="File", name="image">  <br><br>
+	<input type="submit" value="predict" ><br> 
+</form> 
+
+
+<br>
+ 
+
+{% if pred == 0%}
+<h4 style=color:"red;"> mantled_howler </h2>
+
+{% elif pred == 1%}
+<h4 style=color:"red;"> patas_monkey </h2>
+
+{% elif pred == 2%}
+<h4 style=color:"red;"> bald_uakari </h2>
+
+{% elif pred== 3%}
+<h4 style=color:"red;"> japanese_macaque </h2>
+
+{% elif pred == 4%}
+<h4 style=color:"red;"> pygmy_marmoset </h2>
+
+{% elif pred == 5%}
+<h4 style=color:"red;"> white_headed_capuchin </h2>
+
+{% elif pred == 6%}
+<h4 style=color:"red;"> silvery_marmoset </h2>
+
+{% elif pred == 7%}
+<h4 style=color:"red;"> common_squirrel_monkey </h2>
+
+{% elif predi == 8%}
+<h4 style=color:"red;"> black_headed_night_monkey </h2>
+
+{% elif pred == 9%}
+<h4 style=color:"red;"> nilgiri_langur </h2>
+{% endif %}
+
+
+
+</body>
+
+</html>
